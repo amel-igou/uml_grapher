@@ -10,3 +10,9 @@ The project requires a JDK 17 (recommended distribution is Temurin from [Adoptiu
 From there, simply use the Maven wrapper to launch all tests (unit tests & integration tests).
 
 `./mvnw verify`
+
+# uml_grapher
+
+![build CI](https://github.com/amel-igou/uml_grapher/actions/workflows/build.yml/badge.svg)
+![build TEST](https://codecov.io/gh/amel-igou/uml_grapher/branch/main/graph/badge.svg)
+
