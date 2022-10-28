@@ -1,9 +1,9 @@
 package fr.lernejo;
 
-    import fr.lernejo.umlgrapher.GraphType;
-    import fr.lernejo.umlgrapher.UmlGraph;
-    import org.assertj.core.api.Assertions;
-    import org.junit.jupiter.api.Test;
+import fr.lernejo.umlgrapher.GraphType;
+import fr.lernejo.umlgrapher.UmlGraph;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 class UmlGraphTests {
     @Test
@@ -19,6 +19,7 @@ class UmlGraphTests {
             }
             """);
     }
+
     interface Machin {
     }
 }
