@@ -9,17 +9,17 @@ public class UmlGraph {
     }
     public String as(GraphType format) {
         if (format == GraphType.Mermaid) {
-            String graph = "classDiagram";
+            StringBuilder graph = new StringBuilder("classDiagram");
 
             for(Class<?> theClass : classes){
                 boolean isInterface = Modifier.isInterface(theClass.getModifiers());
-                graph += "\nclass %s %s".formatted(
+                graph.append("\nclass %s %s".formatted(
                     theClass.getSimpleName(),
                     isInterface ? "{\n    <<interface>>\n}\n" : "\n"
-                );
+                ));
             }
 
-            return graph;
+            return graph.toString();
         }
         return "";
     }
